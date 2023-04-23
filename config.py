@@ -1,0 +1,25 @@
+psql_username = "ENTER POSTGRES USERNAME"
+psql_password = "ENTER POSTGRES PASSWORD"
+psql_hostname = "ENTER POSTGRES SERVER ENDPOINT NAME"
+psql_port = "5432"
+psql_database = "ENTER POSTGRES DATABASE NAME"
+# BELOW SHOULD BE CONVENTION FOR POSTGRESQL STRING: 'postgresql://db_username:db_passwd@server_endpoint_name:5432/db_name'
+psql_string = 'postgresql://' + psql_username + psql_password + "@" + psql_hostname + ":" + psql_port + "/" + psql_database
+tenant_id = "ENTER YOUR TENANT ID"
+client_id = "ENTER YOUR APPLICATION CLIENT ID"
+client_secret = "ENTER YOUR CLIENT SECRET"
+scope = "https://outlook.office.com/.default"
+authority = "https://login.microsoftonline.com/" + tenant_id
+service_account = "Enter mailbox name (Ex): example@outlook.com"
+imap_host = "outlook.office365.com"
+subject1 = "ENTER SUBJECT TITLE 1"
+subject2 = "ENTER SUBJECT TITLE 2"
+smtp_host = "smtp.office365.com"
+smtp_port = 587
+smtp_user = "Enter account used for alert notifications. (Ex): alerts@outlook.com"
+smtp_passwd = "Enter SMTP account password"
+smtp_cc_list = 'user1@example.com, user2@example.com' # Enter your cc list of users here
+report1 = "ENTER REPORT TITLE 1"
+report2 = "ENTER REPORT TITLE 2"
+psql_table1 = "Enter First Postgres Table Name" # Table for holding csv report data
+psql_table2 = "Enter Second Postgres Table Name" # Table for holding excel report data
