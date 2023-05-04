@@ -74,3 +74,8 @@ Add-MailboxPermission -Identity "serviceAccount@example.com" -User $MyApp.Object
         smtp_server.quit()
         smtp_server.close()
  ```
+ The objective of this function following the execution of ***reportDataDump()*** function is to proceed with **sending an email notification following the data drop of the report file to the respective SQL table in the Postgres Database.**  
+ A few things to keep in mind when using SMTP with Python with an associated Outlook mailbox account. 
+ - First, the account used for SMTP alerts must have the **mail settings enabled when using apps tied to it's mailbox.** 
+ - Second, if **MFA is enforced on your Microsoft Tenant,** you will need to **exclude your user account for the SMTP notification via Azure Conditional Access policies.** 
+ 
