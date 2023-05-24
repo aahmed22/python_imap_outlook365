@@ -4,7 +4,7 @@ psql_hostname = "ENTER POSTGRES SERVER ENDPOINT NAME"
 psql_port = "5432"
 psql_database = "ENTER POSTGRES DATABASE NAME"
 # BELOW SHOULD BE CONVENTION FOR POSTGRESQL STRING: 'postgresql://db_username:db_passwd@server_endpoint_name:5432/db_name'
-psql_string = 'postgresql://' + psql_username + psql_password + "@" + psql_hostname + ":" + psql_port + "/" + psql_database
+psql_string = 'postgresql://' + psql_username + ":" + psql_password + "@" + psql_hostname + ":" + psql_port + "/" + psql_database
 tenant_id = "ENTER YOUR TENANT ID"
 client_id = "ENTER YOUR APPLICATION CLIENT ID"
 client_secret = "ENTER YOUR CLIENT SECRET"
